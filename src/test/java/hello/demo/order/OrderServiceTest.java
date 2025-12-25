@@ -1,16 +1,26 @@
 package hello.demo.order;
 
+import hello.demo.Appconfig;
 import hello.demo.member.Grade;
 import hello.demo.member.Member;
 import hello.demo.member.MemberService;
 import hello.demo.member.MemberServiceImpl;
 import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class OrderServiceTest {
 
-    MemberService memberService = new MemberServiceImpl();
-    OrderService orderService = new OrderServiceImpl();
+    MemberService memberService;
+    OrderService orderService;
+
+    // 테스트마다 독립된 객체를 사용함
+    @BeforeEach
+    public void beforeEach() {
+        Appconfig appconfig = new Appconfig();
+        memberService = appconfig.memberService();
+        orderService = appconfig.orderService();
+    }
 
     @Test
     void createOrder(){

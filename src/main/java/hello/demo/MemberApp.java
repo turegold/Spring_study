@@ -4,10 +4,18 @@ import hello.demo.member.Grade;
 import hello.demo.member.Member;
 import hello.demo.member.MemberService;
 import hello.demo.member.MemberServiceImpl;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class MemberApp {
     public static void main(String[] args) {
-        MemberService memberService = new MemberServiceImpl();
+//        Appconfig appconfig = new Appconfig();
+//        MemberService memberService = appconfig.memberService();
+
+        // 스프링 컨테이너
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(Appconfig.class);
+        MemberService memberService = applicationContext.getBean("memberService", MemberService.class);
+
         Member member = new Member(1L, "memberA", Grade.VIP);
         memberService.join(member);
 
