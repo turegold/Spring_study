@@ -1,7 +1,5 @@
 package hello.demo.beanfind;
 
-import hello.demo.Appconfig;
-import hello.demo.discount.DiscountPolicy;
 import hello.demo.member.MemberRepository;
 import hello.demo.member.MemoryMemberRepository;
 import org.assertj.core.api.Assertions;

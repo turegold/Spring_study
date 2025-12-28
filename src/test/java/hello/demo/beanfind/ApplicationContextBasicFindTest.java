@@ -1,9 +1,8 @@
 package hello.demo.beanfind;
 
-import hello.demo.Appconfig;
+import hello.demo.AppConfig;
 import hello.demo.member.MemberService;
 import hello.demo.member.MemberServiceImpl;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;
@@ -14,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class ApplicationContextBasicFindTest {
     // 스프링 컨테이너 생성
-    AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(Appconfig.class);
+    AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
 
     @Test
     @DisplayName("빈 이름으로 조회")

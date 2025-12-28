@@ -1,6 +1,6 @@
 package hello.demo.member;
 
-import hello.demo.Appconfig;
+import hello.demo.AppConfig;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -12,7 +12,7 @@ public class MemberServiceTest {
     // 테스트마다 독립된 객체를 사용함
     @BeforeEach
     public void beforeEach() {
-        Appconfig appconfig = new Appconfig();
+        AppConfig appconfig = new AppConfig();
         memberService = appconfig.memberService();
     }
 

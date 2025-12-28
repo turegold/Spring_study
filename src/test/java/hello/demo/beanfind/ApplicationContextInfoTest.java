@@ -1,6 +1,6 @@
 package hello.demo.beanfind;
 
-import hello.demo.Appconfig;
+import hello.demo.AppConfig;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.config.BeanDefinition;
@@ -8,7 +8,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class ApplicationContextInfoTest {
     // 스프링 컨테이너 생성
-    AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(Appconfig.class);
+    AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
 
     // 빈은 {key, value}로 구성된다.
     @Test
