@@ -18,7 +18,7 @@
 - [x] Spring MVC 3강 수강 (1/6)
 - [x] Spring MVC 4강 수강 (1/7 ~ 8)
 - [x] Spring MVC 5강 수강 (1/9)
-- [ ] Spring MVC 6강 수강 ( )
+- [x] Spring MVC 6강 수강 (2/3 ~ 2/4)
 - [ ] Spring MVC 7강 수강 ( )
 - [ ] Spring MVC 8강 수강 ( )
 
