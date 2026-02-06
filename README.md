@@ -22,7 +22,14 @@
 - [x] Spring MVC 7강 수강 (2/4 ~ 2/5)
 - [x] Spring MVC 8강 수강 (2/5)
 
-
+# 스프링 DB
+- [x] Spring DB 1강 수강 (2/6)
+- [x] Spring DB 2강 수강 (2/6)
+- [] Spring DB 3강 수강 ()
+- [] Spring DB 4강 수강 ()
+- [] Spring DB 5강 수강 ()
+- [] Spring DB 6강 수강 ()
+- [] Spring DB 7강 수강 ()
 
 
 
